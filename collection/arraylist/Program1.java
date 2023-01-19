@@ -3,6 +3,7 @@
 package com.practiseprograms.collection.arraylist;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Program1 {
@@ -19,7 +20,13 @@ public class Program1 {
 		
 		//System.out.println(list);
 		
-		for(String s : list) {
+//		for(String s : list) {
+//			System.out.println(s);
+//		}
+		
+		Iterator itr = list.iterator();
+		while(itr.hasNext()) {
+			Object s = itr.next();
 			System.out.println(s);
 		}
 	}
