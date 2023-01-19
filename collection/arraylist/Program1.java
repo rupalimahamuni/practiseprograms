@@ -17,8 +17,10 @@ public class Program1 {
 		list.add("Green");
 		list.add("Red");
 		
-		System.out.println(list);
+		//System.out.println(list);
 		
-		
+		for(String s : list) {
+			System.out.println(s);
+		}
 	}
 }
